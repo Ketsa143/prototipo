@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo - Plataforma de Aprendizaje Adaptativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <h1>Prototipo de Plataforma de Aprendizaje Adaptativo</h1>
+        <p>Explora cómo se adapta el contenido a tu progreso</p>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <section class="main-content">
+        <!-- Sección de progreso -->
+        <div class="progress-section">
+            <h2>Progreso del Usuario</h2>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <p>Progreso: <span id="progress-text">0%</span></p>
+        </div>
+
+        <!-- Sección de lecciones personalizadas -->
+        <div class="lesson-section">
+            <h2>Lecciones Adaptativas</h2>
+            <p>Contenido adaptado a tu nivel:</p>
+            <div id="lesson-content">
+                <p>Inicia una lección para ver el contenido adaptado.</p>
+            </div>
+            <button onclick="startLesson()">Iniciar Lección</button>
+        </div>
+
+        <!-- Sección de evaluación adaptativa -->
+        <div class="quiz-section">
+            <h2>Evaluación Adaptativa</h2>
+            <p>Realiza una prueba para personalizar tu contenido</p>
+            <button onclick="takeQuiz()">Iniciar Evaluación</button>
+        </div>
+    </section>
+
+    <script src="prototipar.js"></script>
+</body>
+</html>
